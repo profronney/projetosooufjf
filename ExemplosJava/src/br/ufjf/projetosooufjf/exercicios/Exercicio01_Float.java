@@ -1,5 +1,6 @@
 package br.ufjf.projetosooufjf.exercicios;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Exercicio01_Float {
@@ -8,6 +9,7 @@ public class Exercicio01_Float {
 		float valor1, valor2, valor3; //Dados de entrada
 		float media; // variável média
 		Scanner teclado = new Scanner(System.in); //Leitor do teclado
+		teclado.useLocale(Locale.US); // setar o locale
 		System.out.print("Informe o valor 1: ");
     	valor1 = teclado.nextFloat();
     	System.out.print("Informe o valor 2: ");
